@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+*{
+  margin: 0;
+  padding: 0;
+}
+  body {
+    font-family: "Quicksand";
+  }
+  
+ /* shared styles */
+
+ .display-flex{
+  display: flex;
+ }
+
+
+ /* navbar styles */
+
+ #contact-btn{
+  background-color: orange;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 20;
+  padding: 10px 44px;
+  border: none;
+  border-radius: 12px;
+ }
+
+ .navbar {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-top: 87px;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 32px;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.nav-link{
+  text-decoration: none;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* logo related styles */
+
+.logo{
+  align-items: center;
+}
+#logo-text {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 11px;
+}
+#logo-img {
+  width: 100%;
+  height: 100%;
+}
+#home{
+  color: orange;
+}
+#about {
+  color: skyblue;
+}
+#facilities {
+  color: rgba(5, 212, 223, 1);
+}
+#admission{
+  color: rgba(93, 88, 239, 1);
+}
+
+/* media query for small device */
+@media screen and (max-width: 576px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        width: 200px;
+        padding: 10px 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .navbar {
+        position: relative;
+    }
+    #contact-btn {
+      display: none;
+    }
+}
