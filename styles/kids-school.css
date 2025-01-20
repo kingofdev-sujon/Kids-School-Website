@@ -20,9 +20,8 @@
   display: flex;
  }
 
-
- /* navbar styles */
-
+/* button section */
+ /* contact-button */
  #contact-btn{
   background-color: orange;
   color: white;
@@ -33,6 +32,19 @@
   border-radius: 12px;
  }
 
+ /* enroll-now button */
+ #enroll-now {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 20;
+  padding: 10px 44px;
+  border: none;
+  border-radius: 12px;
+ }
+
+
+ /* navbar styles */
  .navbar {
   justify-content: space-between;
   align-items: center;
@@ -81,10 +93,40 @@
   color: rgba(93, 88, 239, 1);
 }
 
-/* media query for small device */
-@media screen and (max-width: 576px) {
+  /* banner-section */
+  .banner {
+    max-width: 1158px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+   }
+  
+   .banner-content h3{
+    font-size: 3.5rem;
+    font-weight: 600;
+   }
+
+   #banner-description {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 24px auto;
+   }
+
+   #empowering {
+    color: orange;
+   }
+   #towards {
+    color: skyblue;
+   }
+
+
+
+
+
+ /* media query for small device */
+ @media screen and (max-width: 576px) {
     .nav-links {
-        display: flex;
+      display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -95,6 +137,9 @@
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         align-items: center;
     }
+    #logo-text {
+      display: none;
+    }
 
     .navbar {
         position: relative;
@@ -102,4 +147,25 @@
     #contact-btn {
       display: none;
     }
+
+    .banner {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+    .banner-content {
+      padding: 10px;
+    }
+
+    .banner-content h3 {
+      font-size: 2rem;
+      font-weight: 500px;
+    }
+    .banner-img {
+
+    }
+
+
 }
