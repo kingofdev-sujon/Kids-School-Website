@@ -302,20 +302,6 @@
     font-size: 14px;
     color: #555;
   }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .card-section {
-      grid-template-columns: 1fr; /* Single column layout for small screens */
-    }
-  
-    .right-section {
-      grid-template-columns: 1fr; /* Single card per row in the right section */
-    }
-  }
-  
-
-
 
  /* media query for small device */
  @media screen and (max-width: 576px) {
