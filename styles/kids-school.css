@@ -349,5 +349,15 @@
       justify-items: center;
     }
 
+    .large-card{
+      display: none;
+    }
+    .small-card {
+      display: grid inline-block;
+      grid-template-columns: repeat(2, 1fr);
+      width: 290px;
+      justify-content: center;
+    }
+
 
 }
