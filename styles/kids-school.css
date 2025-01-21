@@ -20,6 +20,11 @@
   display: flex;
  }
 
+ /* text-gray */
+ .text-gray{
+  color: rgba(128, 128, 128, 1);
+ }
+
 /* button section */
  /* contact-button */
  #contact-btn{
@@ -119,7 +124,87 @@
     color: skyblue;
    }
 
+   /* standard curriculum styles start here */
 
+   .curriculum {
+    background-image: url(../assets/bg.png);
+    width: 100%;
+   }
+
+   #curriculum-title{
+    text-align: center;
+    font-size: 2.87rem;
+    font-weight: 700;
+    margin-top: 60px;
+   }
+
+   .card-container{
+    max-width: 1160px;
+    margin: 0 auto;
+    margin: 90px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+   }
+   .card-container h6 {
+    font-size: 1rem;
+    font-weight: 400;
+   }
+
+   .curriculum-card {
+    border: none;
+    border-radius: 19px;
+    height: 450px;
+    width: 370px;
+    text-align: center;
+    justify-items: center;
+    padding: 10px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+   }
+
+   .card-img {
+    margin-top: 44px;
+   }
+   .card-title {
+    font-size: 1.56rem;
+    font-weight: 500;
+    margin-top: 33px;
+   }
+
+   .card-p{
+    padding: 20px 15px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    
+   }
+
+   #first {
+    background: linear-gradient(180deg, #eaf6ff 0%, #ffffff 100%);
+   }
+   #second {
+    background: linear-gradient(180deg, rgba(255, 244, 220, 1) 0%, #ffffff 100%);
+   }
+   #last{
+    background: linear-gradient(180deg, rgba(242, 232, 255, 1) 0%, #ffffff 100%);
+   }
+
+   .readmore{
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: 800;
+   }
+
+   #first-read{
+    color: rgba(100, 200, 255, 1);
+   }
+
+   #second-read{
+    color: rgba(240, 170, 0, 1);
+   }
+
+   #last-read{
+    color: rgba(135, 0, 255, 1);
+   }
 
 
 
