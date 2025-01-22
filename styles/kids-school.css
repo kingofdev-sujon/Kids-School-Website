@@ -13,6 +13,7 @@
 }
   body {
     font-family: "Quicksand";
+    margin: 0 auto;
   }
   
  /* shared styles */
@@ -140,6 +141,7 @@
    .curriculum {
     background-image: url(../assets/bg.png);
     width: 100%;
+    margin: 0 auto;
    }
 
    #curriculum-title{
@@ -223,6 +225,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+    margin: 0 auto;
    }
 
    .icon img {
@@ -252,6 +255,7 @@
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
+    margin: 0 auto;
   }
   #our-story {
     font-size: 2.8rem;
@@ -331,13 +335,14 @@
   #view-all {
     background-color: black;
     color: white;
-    padding: 5px 40px;
+    padding: 12px 40px;
     border: none;
     border-radius: 8px;
     font-size: 1.25rem;
     margin-left: 50%;
     margin-right: 50%;
     margin-bottom: 50px;
+    width: max-content;
 
   }
 
