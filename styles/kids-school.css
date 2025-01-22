@@ -7,10 +7,13 @@
     font-style: normal;
   }
 
+
 *{
   margin: 0;
   padding: 0;
+
 }
+
   body {
     font-family: "Quicksand";
     margin: 0 auto;
@@ -20,6 +23,9 @@
 
  .display-flex{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
  }
 
  /* text-gray */
@@ -53,9 +59,7 @@
 
  /* navbar styles */
  .navbar {
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1110px;
+  max-width: 1158px;
   margin: 0 auto;
   margin-top: 87px;
 }
@@ -82,10 +86,12 @@
   font-size: 2rem;
   font-weight: 700;
   margin-left: 11px;
+  width: 100%;
+
 }
 #logo-img {
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: auto;
 }
 #home{
   color: orange;
@@ -152,11 +158,11 @@
 
    .card-container{
     max-width: 1160px;
-    margin: 0 auto;
     margin: 90px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 20px;
+    padding-bottom: 50px;
    }
    .card-container h6 {
     font-size: 1rem;
@@ -167,7 +173,7 @@
     border: none;
     border-radius: 19px;
     height: 450px;
-    width: 370px;
+    width: 300px;
     text-align: center;
     justify-items: center;
     padding: 10px;
@@ -246,7 +252,7 @@
     align-items: start;
     max-width: 1160px;
     margin: 0 auto;
-    margin-bottom: 190px;
+    margin-bottom: 100px;
   }
   .our-stories{
     background-image: linear-gradient(180deg, white 0%, rgb(238, 216, 170) 100%), url(../assets/bg.png);
@@ -264,7 +270,7 @@
   }
   
   #larges-card {
-    height: 708px;
+    height: 718px;
     width: 540px;
   }
   .large-card {
@@ -332,17 +338,20 @@
   }
 
   #view-all {
+    display: flex;
+    justify-content: center;
+    
+
+  }
+
+  .v-all-btn{
     background-color: black;
     color: white;
-    padding: 12px 40px;
     border: none;
     border-radius: 8px;
     font-size: 1.25rem;
-    margin-left: 50%;
-    margin-right: 50%;
     margin-bottom: 50px;
-    width: max-content;
-
+    padding: 20px 40px;
   }
 
   /* footer-section-styles */
@@ -437,7 +446,7 @@
  /* media query for small device */
  @media screen and (max-width: 576px) {
     .nav-links {
-      /* display: none; */
+      display: none;
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -474,7 +483,12 @@
       font-size: 2rem;
       font-weight: 500px;
     }
-    .card-container {
+
+    .banner-img img{
+      width: 80%;
+    }
+
+    .card-container{
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       justify-items: center;
@@ -483,11 +497,10 @@
     .large-card{
       display: none;
     }
-    .small-card {
-      display: grid inline-block;
-      grid-template-columns: repeat(2, 1fr);
-      width: 290px;
-      justify-content: center;
+
+    .card-section {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
     }
 
     /* footer */
