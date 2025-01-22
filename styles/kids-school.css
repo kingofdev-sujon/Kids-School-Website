@@ -250,7 +250,6 @@
     margin-bottom: 190px;
   }
   .our-stories{
-    /* margin: 80px auto; */
     background-image: linear-gradient(180deg, white 0%, rgb(238, 216, 170) 100%), url(../assets/bg.png);
     background-size: cover;
     background-position: center;
@@ -262,6 +261,7 @@
     font-weight: 600;
     text-align: center;
     margin-bottom: 60px;
+    margin-top: 30px;
   }
   
   #larges-card {
